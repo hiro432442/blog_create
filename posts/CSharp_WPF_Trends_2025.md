@@ -3,7 +3,7 @@ title: '「まだWPFで消耗してるの？」 2025年の現場で役立つ、�
 date: '2026-02-07'
 ---
 
-![Legacy vs Modern WPF Interface](/window.svg)
+![Legacy vs Modern WPF Interface](/flacta_alter/Engineerblog/window.svg)
 
 # はじめに：なぜ、今のWPF開発は「つらい」のか
 
@@ -21,7 +21,7 @@ Web技術の進化は目覚ましく、ReactやVue.jsのようなモダンなフ
 
 この記事では、2025年の今、現場で即戦力となる「モダンWPF開発の5つのトレンド」紹介します。これらは単なる流行り廃りではなく、日々の開発の「ムダ」と「痛み」を取り除くための強力な処方箋です。
 
-![Modern WPF Toolkit](/globe.svg)
+![Modern WPF Toolkit](/flacta_alter/Engineerblog/globe.svg)
 
 # 現場を救う「5つの技術トレンド」
 
@@ -93,7 +93,7 @@ WPFの強みである「OS機能への深いアクセス」と、Webの強みで
 
 これらはパフォーマンスチューニングというよりは、現代のアプリケーション開発における「必須教養」です。ユーザー体験（UX）を守る最後の砦と言えるでしょう。
 
-![Spaghetti Code Warning](/next.svg)
+![Spaghetti Code Warning](/flacta_alter/Engineerblog/next.svg)
 
 # 警鐘：ライブラリを入れただけでは、何も解決しない
 
@@ -105,7 +105,7 @@ WPFの強みである「OS機能への深いアクセス」と、Webの強みで
 
 重要なのは、ツールそのものではなく、そのツールが解決しようとしている「課題」と「設計思想」を理解することです。チーム全体でモダンな開発手法への理解を深め、コードレビューを通じて設計品質を高め続ける文化こそが、真の解決策です。
 
-![Success Future](/vercel.svg)
+![Success Future](/flacta_alter/Engineerblog/vercel.svg)
 
 # おわりに：WPFはまだ戦える。再武装せよ
 
