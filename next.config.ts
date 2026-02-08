@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
-  basePath: '/flacta_alter/Engineerblog',
+  basePath: '/Engineerblog',
 };
 
 export default nextConfig;
