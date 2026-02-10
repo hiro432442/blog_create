@@ -1,0 +1,54 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <!-- Modern Tech Gradient -->
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#312e81" />
+    </linearGradient>
+    
+    <!-- Code Block Gradient -->
+    <linearGradient id="code-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#6366f1" stroke-width="0.5" stroke-opacity="0.1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg-gradient)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
+
+  <!-- Abstract Code Lines -->
+  <g transform="translate(100, 150)">
+    <rect x="0" y="0" width="400" height="15" rx="4" fill="#38bdf8" opacity="0.8" />
+    <rect x="0" y="30" width="300" height="15" rx="4" fill="#818cf8" opacity="0.6" />
+    <rect x="40" y="60" width="350" height="15" rx="4" fill="#a5b4fc" opacity="0.4" />
+    <rect x="40" y="90" width="250" height="15" rx="4" fill="#c7d2fe" opacity="0.3" />
+    <rect x="0" y="130" width="100" height="15" rx="4" fill="#fb7185" opacity="0.7" />
+  </g>
+  
+  <g transform="translate(800, 400)">
+    <rect x="0" y="0" width="300" height="15" rx="4" fill="#34d399" opacity="0.5" />
+    <rect x="40" y="30" width="200" height="15" rx="4" fill="#6ee7b7" opacity="0.4" />
+    <rect x="40" y="60" width="150" height="15" rx="4" fill="#a7f3d0" opacity="0.3" />
+  </g>
+
+  <!-- Connecting Nodes -->
+  <circle cx="600" cy="315" r="80" fill="none" stroke="#6366f1" stroke-width="2" opacity="0.5" />
+  <circle cx="600" cy="315" r="120" fill="none" stroke="#818cf8" stroke-width="1" stroke-dasharray="10 10" opacity="0.3">
+    <animateTransform attributeName="transform" type="rotate" from="0 600 315" to="360 600 315" dur="60s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Floating Icons/Shapes -->
+  <rect x="900" y="100" width="80" height="80" rx="10" fill="url(#code-gradient)" stroke="#38bdf8" stroke-width="2" opacity="0.6" transform="rotate(15 940 140)" />
+  <circle cx="200" cy="500" r="40" fill="url(#code-gradient)" stroke="#f472b6" stroke-width="2" opacity="0.6" />
+
+  <!-- Title Placeholder (Optional) -->
+  <text x="600" y="580" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24" fill="#94a3b8" text-anchor="middle" letter-spacing="4" opacity="0.8">ENGINEERING PERSPECTIVE</text>
+
+</svg>

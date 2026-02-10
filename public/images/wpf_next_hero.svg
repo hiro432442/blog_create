@@ -1,0 +1,22 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#1a1a2e" />
+  
+  <!-- WPF Side -->
+  <g transform="translate(100, 100)">
+    <rect width="200" height="200" rx="20" fill="#512bd4" opacity="0.8" />
+    <text x="100" y="100" font-family="Arial" font-size="40" fill="white" text-anchor="middle" dominant-baseline="middle">WPF</text>
+    <text x="100" y="140" font-family="Arial" font-size="16" fill="#ccc" text-anchor="middle">Stateful & Persistent</text>
+  </g>
+
+  <!-- VS Icon -->
+  <text x="400" y="200" font-family="Arial" font-size="60" fill="white" text-anchor="middle" dominant-baseline="middle">VS</text>
+
+  <!-- Next.js Side -->
+  <g transform="translate(500, 100)">
+    <rect width="200" height="200" rx="100" fill="white" opacity="0.1" stroke="white" stroke-width="2"/>
+    <circle cx="100" cy="100" r="80" fill="black" />
+    <text x="100" y="100" font-family="Arial" font-size="40" fill="white" text-anchor="middle" dominant-baseline="middle">Next.js</text>
+    <text x="100" y="140" font-family="Arial" font-size="16" fill="#ccc" text-anchor="middle">Stateless & Server</text>
+  </g>
+</svg>

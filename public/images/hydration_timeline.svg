@@ -1,0 +1,33 @@
+<svg width="800" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="300" fill="#fff" />
+  
+  <!-- Timeline Arrow -->
+  <line x1="50" y1="150" x2="750" y2="150" stroke="#333" stroke-width="4" marker-end="url(#arrow)" />
+
+  <!-- Phases -->
+  
+  <!-- Phase 1: HTML Download -->
+  <circle cx="100" cy="150" r="15" fill="#e5e5e5" stroke="#333" stroke-width="2" />
+  <text x="100" y="120" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">HTML Load</text>
+  <text x="100" y="190" font-family="Arial" font-size="12" fill="#666" text-anchor="middle">Content Visible</text>
+  <text x="100" y="210" font-family="Arial" font-size="12" fill="#666" text-anchor="middle">(Non-interactive)</text>
+
+  <!-- Phase 2: JS Download & Execute -->
+  <rect x="250" y="140" width="200" height="20" fill="#fca5a5" opacity="0.6" />
+  <text x="350" y="130" font-family="Arial" font-size="14" fill="#b91c1c" text-anchor="middle" font-weight="bold">The Uncanny Valley</text>
+  <text x="350" y="180" font-family="Arial" font-size="12" fill="#b91c1c" text-anchor="middle">Button looks clickable...</text>
+  <text x="350" y="200" font-family="Arial" font-size="12" fill="#b91c1c" text-anchor="middle">But NOTHING happens!</text>
+
+  <!-- Phase 3: Hydration -->
+  <circle cx="600" cy="150" r="15" fill="#4ade80" stroke="#16a34a" stroke-width="2" />
+  <text x="600" y="120" font-family="Arial" font-size="14" fill="#166534" text-anchor="middle" font-weight="bold">Hydration Complete</text>
+  <text x="600" y="190" font-family="Arial" font-size="12" fill="#166534" text-anchor="middle">React wakes up</text>
+  <text x="600" y="210" font-family="Arial" font-size="12" fill="#166534" text-anchor="middle">Event Handlers Attached</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333" />
+    </marker>
+  </defs>
+</svg>

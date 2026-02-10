@@ -1,0 +1,44 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#1e1e1e" />
+  
+  <!-- Server Side (Left) -->
+  <g transform="translate(50, 50)">
+    <text x="150" y="-20" font-family="Consolas, monospace" font-size="20" fill="#4ade80" font-weight="bold">Server (Node.js)</text>
+    <rect x="0" y="0" width="300" height="250" rx="10" fill="#2d2d2d" stroke="#4ade80" stroke-width="2" />
+    
+    <!-- Code Snippet -->
+    <text x="20" y="40" font-family="Consolas, monospace" font-size="14" fill="#d4d4d4">&lt;div&gt;</text>
+    <text x="40" y="70" font-family="Consolas, monospace" font-size="14" fill="#d4d4d4">  Welcome, User!</text>
+    <text x="40" y="100" font-family="Consolas, monospace" font-size="14" fill="#d4d4d4">  Time: <tspan fill="#4ade80">10:00:00</tspan></text>
+    <text x="20" y="130" font-family="Consolas, monospace" font-size="14" fill="#d4d4d4">&lt;/div&gt;</text>
+    
+    <text x="150" y="200" font-family="Arial" font-size="14" fill="#888" text-anchor="middle">Generated HTML</text>
+  </g>
+
+  <!-- Client Side (Right) -->
+  <g transform="translate(450, 50)">
+    <text x="150" y="-20" font-family="Consolas, monospace" font-size="20" fill="#38bdf8" font-weight="bold">Client (Browser)</text>
+    <rect x="0" y="0" width="300" height="250" rx="10" fill="#2d2d2d" stroke="#38bdf8" stroke-width="2" />
+    
+    <!-- Code Snippet -->
+    <text x="20" y="40" font-family="Consolas, monospace" font-size="14" fill="#d4d4d4">&lt;div&gt;</text>
+    <text x="40" y="70" font-family="Consolas, monospace" font-size="14" fill="#d4d4d4">  Welcome, User!</text>
+    <text x="40" y="100" font-family="Consolas, monospace" font-size="14" fill="#d4d4d4">  Time: <tspan fill="#38bdf8">10:00:01</tspan></text>
+    <text x="20" y="130" font-family="Consolas, monospace" font-size="14" fill="#d4d4d4">&lt;/div&gt;</text>
+    
+    <text x="150" y="200" font-family="Arial" font-size="14" fill="#888" text-anchor="middle">Re-rendered DOM</text>
+  </g>
+
+  <!-- Error Explosion -->
+  <g transform="translate(400, 175)">
+    <path d="M -40 -20 L 40 -20 L 0 50 Z" fill="#ef4444" stroke="#b91c1c" stroke-width="2" transform="rotate(180)" />
+    <text x="0" y="60" font-family="Arial" font-size="24" fill="#ef4444" font-weight="bold" text-anchor="middle">MISMATCH!</text>
+    
+    <!-- Lightning Bolt -->
+    <path d="M -10 -50 L 20 -10 L 0 0 L 10 40 L -20 0 L 0 -10 Z" fill="#fbbf24" stroke="#f59e0b" transform="translate(0, -30)" />
+  </g>
+
+  <text x="400" y="350" font-family="Consolas, monospace" font-size="16" fill="#ef4444" text-anchor="middle">Error: Hydraion failed because the initial UI does not match...</text>
+
+</svg>

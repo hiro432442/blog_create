@@ -1,0 +1,45 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333" />
+    </marker>
+  </defs>
+
+  <rect width="800" height="400" fill="#f8f9fa" />
+  
+  <!-- Left: Chaos -->
+  <g transform="translate(50, 50)">
+    <text x="100" y="-20" font-family="'Segoe UI', Arial" font-size="18" fill="#e11d48" font-weight="bold">Standard Python (Dict)</text>
+    <rect x="0" y="0" width="200" height="120" rx="10" fill="#ffe4e6" stroke="#e11d48" stroke-dasharray="5,5" />
+    <text x="100" y="40" font-family="Consolas, monospace" font-size="14" fill="#881337" text-anchor="middle">data = {</text>
+    <text x="100" y="60" font-family="Consolas, monospace" font-size="14" fill="#881337" text-anchor="middle">  "id": "123",</text>
+    <text x="100" y="80" font-family="Consolas, monospace" font-size="14" fill="#881337" text-anchor="middle">  "age": "thirty"</text>
+    <text x="100" y="100" font-family="Consolas, monospace" font-size="14" fill="#881337" text-anchor="middle">}</text>
+    
+    <line x1="100" y1="120" x2="100" y2="180" stroke="#e11d48" stroke-width="2" marker-end="url(#arrow)" />
+    
+    <text x="100" y="210" font-family="'Segoe UI', Arial" font-size="16" fill="#e11d48" text-anchor="middle">At Runtime:</text>
+    <text x="100" y="240" font-family="Consolas, monospace" font-size="16" fill="#e11d48" font-weight="bold" text-anchor="middle">TypeError / Crash</text>
+  </g>
+
+  <!-- Middle: The Pydantic Filter -->
+  <g transform="translate(300, 150)">
+    <polygon points="0,0 120,40 0,80" fill="#0ea5e9" opacity="0.8" />
+    <text x="40" y="45" font-family="'Segoe UI', Arial" font-size="14" fill="white" font-weight="bold">Pydantic</text>
+  </g>
+
+  <!-- Right: Order -->
+  <g transform="translate(450, 50)">
+    <text x="100" y="-20" font-family="'Segoe UI', Arial" font-size="18" fill="#059669" font-weight="bold">Robust Python (Model)</text>
+    <rect x="0" y="0" width="220" height="120" rx="10" fill="#d1fae5" stroke="#059669" stroke-width="2" />
+    <text x="110" y="40" font-family="Consolas, monospace" font-size="14" fill="#064e3b" text-anchor="middle">class User(BaseModel):</text>
+    <text x="110" y="60" font-family="Consolas, monospace" font-size="14" fill="#064e3b" text-anchor="middle">  id: int = 123</text>
+    <text x="110" y="80" font-family="Consolas, monospace" font-size="14" fill="#064e3b" text-anchor="middle">  age: int  # Error!</text>
+    
+    <line x1="110" y1="120" x2="110" y2="180" stroke="#059669" stroke-width="2" marker-end="url(#arrow)" />
+    
+    <text x="110" y="210" font-family="'Segoe UI', Arial" font-size="16" fill="#059669" text-anchor="middle">At Boundary:</text>
+    <text x="110" y="240" font-family="Consolas, monospace" font-size="16" fill="#059669" font-weight="bold" text-anchor="middle">ValidationError (Safe)</text>
+  </g>
+
+</svg>

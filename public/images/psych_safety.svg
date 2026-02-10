@@ -1,0 +1,39 @@
+<svg width="600" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="600" fill="#f8fafc" />
+  
+  <!-- Axes -->
+  <line x1="50" y1="550" x2="550" y2="550" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" /> <!-- X: Performance Standards -->
+  <line x1="50" y1="550" x2="50" y2="50" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" />   <!-- Y: Psychological Safety -->
+  
+  <text x="300" y="580" font-family="Arial" font-size="14" fill="#334155" text-anchor="middle" font-weight="bold">Performance Standards</text>
+  <text x="20" y="300" font-family="Arial" font-size="14" fill="#334155" text-anchor="middle" transform="rotate(-90, 20, 300)" font-weight="bold">Psychological Safety</text>
+
+  <!-- Zones -->
+  
+  <!-- Low Safety, Low Standard = Apathy -->
+  <rect x="50" y="300" width="250" height="250" fill="#e2e8f0" opacity="0.5" />
+  <text x="175" y="425" font-family="Arial" font-size="16" fill="#64748b" text-anchor="middle">Apathy Zone</text>
+  <text x="175" y="450" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">(Don't care, quiet)</text>
+
+  <!-- Low Safety, High Standard = Anxiety -->
+  <rect x="300" y="300" width="250" height="250" fill="#fecaca" opacity="0.5" />
+  <text x="425" y="425" font-family="Arial" font-size="16" fill="#b91c1c" text-anchor="middle" font-weight="bold">Anxiety Zone</text>
+  <text x="425" y="450" font-family="Arial" font-size="12" fill="#b91c1c" text-anchor="middle">(Fear of mistakes, Defensive)</text>
+
+  <!-- High Safety, Low Standard = Comfort -->
+  <rect x="50" y="50" width="250" height="250" fill="#dbeafe" opacity="0.5" />
+  <text x="175" y="175" font-family="Arial" font-size="16" fill="#1e40af" text-anchor="middle">Comfort Zone</text>
+  <text x="175" y="200" font-family="Arial" font-size="12" fill="#1e40af" text-anchor="middle">(Nice, but low impact)</text>
+
+  <!-- High Safety, High Standard = Learning -->
+  <rect x="300" y="50" width="250" height="250" fill="#bbf7d0" opacity="0.5" />
+  <text x="425" y="175" font-family="Arial" font-size="16" fill="#15803d" text-anchor="middle" font-weight="bold">Learning & High Performance</text>
+  <text x="425" y="200" font-family="Arial" font-size="12" fill="#15803d" text-anchor="middle">(Challenge + Support)</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b" />
+    </marker>
+  </defs>
+</svg>

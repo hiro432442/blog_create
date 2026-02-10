@@ -1,0 +1,23 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#fff" />
+  
+  <!-- Grid -->
+  <line x1="50" y1="350" x2="550" y2="350" stroke="#ccc" stroke-width="2" /> <!-- X Axis (Time) -->
+  <line x1="50" y1="350" x2="50" y2="50" stroke="#ccc" stroke-width="2" /> <!-- Y Axis (Performance) -->
+  
+  <text x="300" y="390" font-family="Arial" font-size="14" text-anchor="middle">Age (20s -> 50s)</text>
+  <text x="20" y="200" font-family="Arial" font-size="14" text-anchor="middle" transform="rotate(-90, 20, 200)">Performance / Output</text>
+
+  <!-- Bad Health Line -->
+  <path d="M 50 300 Q 200 100 300 150 T 550 350" stroke="#ef4444" stroke-width="4" fill="none" />
+  <text x="450" y="320" font-family="Arial" font-size="14" fill="#ef4444" font-weight="bold">Burnout / Back Pain</text>
+
+  <!-- Good Health Line -->
+  <path d="M 50 300 Q 200 150 300 120 T 550 50" stroke="#22c55e" stroke-width="4" fill="none" />
+  <text x="450" y="80" font-family="Arial" font-size="14" fill="#22c55e" font-weight="bold">Sustainable Growth</text>
+  
+  <!-- Points -->
+  <circle cx="300" cy="150" r="5" fill="#ef4444" />
+  <text x="310" y="160" font-family="Arial" font-size="10" fill="#555">The "Crunch" Years</text>
+</svg>

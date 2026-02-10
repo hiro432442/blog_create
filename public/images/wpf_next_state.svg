@@ -1,0 +1,25 @@
+<svg width="800" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="300" fill="#f0f0f0" />
+  
+  <!-- WPF Timeline -->
+  <line x1="100" y1="50" x2="700" y2="50" stroke="#512bd4" stroke-width="4" />
+  <circle cx="100" cy="50" r="10" fill="#512bd4" />
+  <text x="100" y="30" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">App Start</text>
+  <rect x="300" y="40" width="200" height="20" fill="#512bd4" />
+  <text x="400" y="80" font-family="Arial" font-size="12" fill="#555" text-anchor="middle">Memory (ViewModel) stays alive</text>
+  
+  <!-- Next.js Timeline -->
+  <g transform="translate(0, 150)">
+    <line x1="100" y1="50" x2="700" y2="50" stroke="#ccc" stroke-width="2" stroke-dasharray="5,5" />
+    
+    <circle cx="150" cy="50" r="8" fill="#000" />
+    <circle cx="350" cy="50" r="8" fill="#000" />
+    <circle cx="550" cy="50" r="8" fill="#000" />
+    
+    <text x="150" y="30" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Req 1</text>
+    <text x="350" y="30" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Req 2</text>
+    <text x="550" y="30" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Req 3</text>
+    
+    <text x="400" y="80" font-family="Arial" font-size="12" fill="#555" text-anchor="middle">Stateless Requests / Re-renders</text>
+  </g>
+</svg>
