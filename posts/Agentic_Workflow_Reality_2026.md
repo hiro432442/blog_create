@@ -6,6 +6,8 @@ category: 'AI Engineering'
 tags: ['Agentic Workflow', 'LLM', 'System Design', 'Reliability Engineering', 'Python']
 ---
 
+![Agentic Workflow Concept](/Engineerblog/images/agentic_workflow_header.webp)
+
 ## はじめに：チャットボットから「デジタル社員」へ
 
 「RAG（検索拡張生成）で社内ドキュメントを検索できるようになりました」

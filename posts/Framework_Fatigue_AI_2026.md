@@ -6,6 +6,8 @@ category: 'Web Development'
 tags: ['No-Framework', 'AI Coding', 'Web Standards', 'HTMX', 'Frontend']
 ---
 
+![Framework Fatigue Concept](/Engineerblog/images/framework_fatigue_header.webp)
+
 ## はじめに：コンフィグ地獄（Config Hell）からの脱出
 
 「ボタンを一つ置いて、クリックしたらアラートを出したい」

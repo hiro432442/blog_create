@@ -6,7 +6,7 @@ category: 'Technology'
 tags: ['AI', 'Technical Debt', 'Engineering Management', 'Code Quality', 'Refactoring']
 ---
 
-![AI Code Debt Concept](/images/ai_code_debt_header.webp)
+![AI Code Debt Concept](/Engineerblog/images/ai_code_debt_header.webp)
 
 ## はじめに：爆速開発の「二日酔い」
 

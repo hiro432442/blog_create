@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
-    const baseUrl = 'https://hiro432442.github.io/blog_create';
+    const baseUrl = 'https://flacta.com/Engineerblog';
 
     return {
         rules: {
