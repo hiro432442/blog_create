@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <style>
+      .text { font-family: sans-serif; font-weight: bold; fill: #333; }
+      .ai-bot { fill: #00bcd4; stroke: #008ba3; stroke-width: 2; }
+      .human { fill: #ff9800; stroke: #f57c00; stroke-width: 2; }
+      .code-block { fill: #eee; stroke: #ccc; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#ffffff" />
+  
+  <!-- Left Side: AI Generating Code -->
+  <g transform="translate(150, 200)">
+    <circle cx="0" cy="0" r="60" class="ai-bot" opacity="0.2" />
+    <circle cx="0" cy="0" r="40" class="ai-bot" />
+    <circle cx="-15" cy="-10" r="5" fill="#fff" />
+    <circle cx="15" cy="-10" r="5" fill="#fff" />
+    <path d="M -20 20 Q 0 35 20 20" fill="none" stroke="#fff" stroke-width="3" />
+    <text x="0" y="80" text-anchor="middle" class="text" font-size="16">AI Agent</text>
+  </g>
+
+  <!-- Flow of Code Blocks -->
+  <g transform="translate(250, 180)">
+    <rect x="0" y="0" width="80" height="40" class="code-block" />
+    <line x1="10" y1="10" x2="70" y2="10" stroke="#999" stroke-width="2" />
+    <line x1="10" y1="20" x2="50" y2="20" stroke="#999" stroke-width="2" />
+    <line x1="10" y1="30" x2="60" y2="30" stroke="#999" stroke-width="2" />
+  </g>
+  <g transform="translate(350, 220)">
+    <rect x="0" y="0" width="80" height="40" class="code-block" />
+     <line x1="10" y1="10" x2="70" y2="10" stroke="#999" stroke-width="2" />
+     <line x1="10" y1="20" x2="50" y2="20" stroke="#999" stroke-width="2" />
+  </g>
+  
+  <!-- Right Side: Human Reviewing -->
+  <g transform="translate(650, 200)">
+    <circle cx="0" cy="0" r="50" class="human" />
+    <circle cx="-15" cy="-10" r="5" fill="#fff" />
+    <circle cx="15" cy="-10" r="5" fill="#fff" />
+    <path d="M -20 20 Q 0 10 20 20" fill="none" stroke="#fff" stroke-width="3" /> <!-- Stern Look -->
+    
+    <!-- Magnifying Glass -->
+    <circle cx="-30" cy="10" r="25" fill="none" stroke="#333" stroke-width="3" />
+    <line x1="-50" y1="25" x2="-70" y2="45" stroke="#333" stroke-width="3" />
+    
+    <text x="0" y="80" text-anchor="middle" class="text" font-size="16">Human Architect</text>
+  </g>
+
+  <!-- Arrow -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333" />
+    </marker>
+  </defs>
+  <line x1="450" y1="200" x2="550" y2="200" stroke="#333" stroke-width="4" marker-end="url(#arrow)" />
+
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" class="text" font-size="28">The Shift: From Writer to Reviewer</text>
+
+</svg>

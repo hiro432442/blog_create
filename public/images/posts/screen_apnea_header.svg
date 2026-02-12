@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <style>
+      .text { font-family: sans-serif; font-weight: bold; fill: #333; }
+      .face { fill: #e0e0e0; stroke: #333; stroke-width: 2; }
+      .blue-face { fill: #ccccff; stroke: #333; stroke-width: 2; }
+      .code-bg { fill: #1e1e1e; }
+      .code-text { font-family: monospace; fill: #00ff00; font-size: 10px; opacity: 0.5; }
+    </style>
+  </defs>
+  
+  <!-- Background: Coding Environment -->
+  <rect width="800" height="400" fill="#f0f0f0" />
+  
+  <!-- Monitor -->
+  <rect x="250" y="50" width="300" height="200" fill="#333" rx="10" />
+  <rect x="260" y="60" width="280" height="180" class="code-bg" />
+  <text x="270" y="80" class="code-text">
+    const heavyTask = async () => {
+      await process.nextTick();
+      // Complex logic here...
+      // Don't breathe...
+    }
+  </text>
+  
+  <!-- Developer (Holding Breath) -->
+  <circle cx="400" cy="320" r="60" class="blue-face" /> <!-- Head turning blue -->
+  <path d="M 380 340 Q 400 340 420 340" fill="none" stroke="#333" stroke-width="2" /> <!-- Mouth (closed tight) -->
+  <circle cx="380" cy="300" r="15" fill="#fff" /> <!-- Left Eye (Wide) -->
+  <circle cx="380" cy="300" r="5" fill="#333" />
+  <circle cx="420" cy="300" r="15" fill="#fff" /> <!-- Right Eye (Wide) -->
+  <circle cx="420" cy="300" r="5" fill="#333" />
+  
+  <!-- Warning Overlay -->
+  <rect x="550" y="100" width="150" height="80" fill="#ffcc00" stroke="#333" stroke-width="2" rx="5" />
+  <text x="625" y="130" text-anchor="middle" class="text" font-size="16">WARNING</text>
+  <text x="625" y="155" text-anchor="middle" class="text" font-size="14">SpO2 Dropping!</text>
+  
+  <!-- Sweat -->
+  <path d="M 450 280 Q 460 300 450 320" fill="#00ccff" opacity="0.8" />
+
+  <!-- Text -->
+  <text x="400" y="30" text-anchor="middle" class="text" font-size="24">Screen Apnea: The Silent Exhaustion</text>
+
+</svg>

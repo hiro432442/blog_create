@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <style>
+      .text { font-family: sans-serif; font-weight: bold; fill: #333; }
+      .logo-bg { fill: #f0f0f0; stroke: #ccc; stroke-width: 2; }
+      .stressed-face { fill: #ffcc99; stroke: #333; stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="#ffffff" />
+  
+  <!-- Developer -->
+  <circle cx="400" cy="300" r="50" class="stressed-face" /> <!-- Head -->
+  <path d="M 380 290 Q 400 310 420 290" fill="none" stroke="#333" stroke-width="3" /> <!-- Mouth (sad) -->
+  <circle cx="385" cy="280" r="5" fill="#333" /> <!-- Left Eye -->
+  <circle cx="415" cy="280" r="5" fill="#333" /> <!-- Right Eye -->
+  <path d="M 400 350 L 400 400" stroke="#333" stroke-width="5" /> <!-- Body -->
+  <path d="M 400 360 L 350 390" stroke="#333" stroke-width="5" /> <!-- Left Arm -->
+  <path d="M 400 360 L 450 390" stroke="#333" stroke-width="5" /> <!-- Right Arm -->
+  
+  <!-- Sweat drops -->
+  <path d="M 440 260 Q 450 280 440 300" fill="#00ccff" opacity="0.7" />
+  <path d="M 360 260 Q 350 280 360 300" fill="#00ccff" opacity="0.7" />
+
+  <!-- Chaos Bubbles/Logos -->
+  <g transform="translate(100, 100) rotate(-15)">
+    <rect x="-60" y="-30" width="120" height="60" rx="10" class="logo-bg" />
+    <text x="0" y="5" text-anchor="middle" class="text" font-size="24">Kubernetes</text>
+  </g>
+  
+  <g transform="translate(650, 80) rotate(15)">
+    <rect x="-50" y="-25" width="100" height="50" rx="10" class="logo-bg" />
+    <text x="0" y="5" text-anchor="middle" class="text" font-size="24">Rust</text>
+  </g>
+  
+  <g transform="translate(200, 250) rotate(-5)">
+    <rect x="-60" y="-30" width="120" height="60" rx="10" class="logo-bg" />
+    <text x="0" y="5" text-anchor="middle" class="text" font-size="24">Microservices</text>
+  </g>
+  
+  <g transform="translate(600, 280) rotate(10)">
+    <rect x="-50" y="-25" width="100" height="50" rx="10" class="logo-bg" />
+    <text x="0" y="5" text-anchor="middle" class="text" font-size="24">GraphQL</text>
+  </g>
+  
+  <g transform="translate(400, 100)">
+    <rect x="-70" y="-35" width="140" height="70" rx="10" class="logo-bg" stroke="#ff0000" />
+    <text x="0" y="5" text-anchor="middle" class="text" font-size="30" fill="#ff0000">RESUME??</text>
+  </g>
+
+  <!-- Connection Lines -->
+  <line x1="160" y1="130" x2="350" y2="300" stroke="#ccc" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="600" y1="105" x2="450" y2="300" stroke="#ccc" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="260" y1="250" x2="350" y2="320" stroke="#ccc" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="550" y1="280" x2="450" y2="320" stroke="#ccc" stroke-width="2" stroke-dasharray="5,5" />
+
+</svg>

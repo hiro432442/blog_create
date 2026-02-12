@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <style>
+      .text { font-family: sans-serif; font-weight: bold; fill: #555; }
+      .arrow { fill: none; stroke: #4caf50; stroke-width: 8; stroke-linecap: round; }
+      .step-box { fill: #e8f5e9; stroke: #4caf50; stroke-width: 2; rx: 10; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="#ffffff" />
+  
+  <!-- Central Box Visualization -->
+  <rect x="300" y="100" width="200" height="200" fill="none" stroke="#ddd" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- Arrows forming a box -->
+  <!-- Top: Inhale -->
+  <path d="M 300 100 L 500 100" class="arrow" marker-end="url(#arrowhead)" />
+  <text x="400" y="80" text-anchor="middle" class="text" font-size="18">INHALE (4s)</text>
+  
+  <!-- Right: Hold -->
+  <path d="M 500 100 L 500 300" class="arrow" marker-end="url(#arrowhead)" />
+  <text x="550" y="200" text-anchor="middle" class="text" font-size="18" writing-mode="tb">HOLD (4s)</text>
+  
+  <!-- Bottom: Exhale -->
+  <path d="M 500 300 L 300 300" class="arrow" marker-end="url(#arrowhead)" />
+  <text x="400" y="340" text-anchor="middle" class="text" font-size="18">EXHALE (4s)</text>
+  
+  <!-- Left: Hold -->
+  <path d="M 300 300 L 300 100" class="arrow" marker-end="url(#arrowhead)" />
+  <text x="250" y="200" text-anchor="middle" class="text" font-size="18" writing-mode="tb">HOLD (4s)</text>
+
+  <!-- Markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4caf50" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" class="text" font-size="24" fill="#2e7d32">Box Breathing Technique</text>
+
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <style>
+      .axis { stroke: #333; stroke-width: 2; }
+      .text { font-family: sans-serif; fill: #555; font-weight: bold; }
+      .line-coding { fill: none; stroke: #ff9800; stroke-width: 4; }
+      .line-review { fill: none; stroke: #00bcd4; stroke-width: 4; }
+      .legend-box { stroke: #ccc; stroke-width: 1; fill: #fff; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#fcfcfc" />
+
+  <!-- Axes -->
+  <line x1="50" y1="350" x2="750" y2="350" class="axis" /> <!-- X -->
+  <line x1="50" y1="350" x2="50" y2="50" class="axis" />   <!-- Y -->
+
+  <!-- Labels -->
+  <text x="700" y="380" class="text">Time (Year)</text>
+  <text x="20" y="40" class="text" writing-mode="tb">Hours Spent</text>
+
+  <!-- Data Points (Stylized) -->
+  <!-- Coding Time: Decreasing -->
+  <path d="M 50 100 Q 300 150 750 320" class="line-coding" />
+  
+  <!-- Review/Debug Time: Increasing -->
+  <path d="M 50 320 Q 300 280 750 80" class="line-review" />
+
+  <!-- Legend -->
+  <rect x="550" y="50" width="200" height="80" class="legend-box" rx="5" />
+  
+  <line x1="570" y1="70" x2="600" y2="70" class="line-coding" />
+  <text x="610" y="75" class="text" font-size="14">Coding (Writing)</text>
+  
+  <line x1="570" y1="100" x2="600" y2="100" class="line-review" />
+  <text x="610" y="105" class="text" font-size="14">Reviewing / Debugging</text>
+
+  <!-- Years -->
+  <text x="50" y="370" class="text" font-size="12">2020</text>
+  <text x="400" y="370" class="text" font-size="12">2023 (AI Boom)</text>
+  <text x="750" y="370" class="text" font-size="12">2026</text>
+
+  <!-- Annotation -->
+  <line x1="400" y1="50" x2="400" y2="350" stroke="#999" stroke-dasharray="2,2" />
+  <text x="410" y="180" class="text" fill="#333">The "AI Crossover" Point</text>
+
+</svg>
