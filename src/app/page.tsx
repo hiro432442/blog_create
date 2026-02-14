@@ -21,7 +21,7 @@ export default function Home() {
                   {coverImage && (
                     <div className="mb-4 overflow-hidden rounded-lg relative h-48">
                       <Image
-                        src={coverImage}
+                        src={`/Engineerblog${coverImage}`}
                         alt={title}
                         fill
                         className="object-cover transform group-hover:scale-105 transition-transform duration-300"
