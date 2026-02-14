@@ -1,0 +1,68 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="vibeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#f472b6" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur" />
+      <feMerge>
+        <feMergeNode in="coloredBlur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)" />
+
+  <!-- Grid Pattern -->
+  <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)" />
+
+  <!-- Abstract Waves (Vibes) -->
+  <path d="M 0 315 Q 300 100 600 315 T 1200 315" fill="none" stroke="url(#vibeGradient)" stroke-width="8" opacity="0.6" filter="url(#glow)">
+    <animate attributeName="d" 
+             dur="10s" 
+             repeatCount="indefinite"
+             values="M 0 315 Q 300 100 600 315 T 1200 315;
+                     M 0 315 Q 300 500 600 315 T 1200 315;
+                     M 0 315 Q 300 100 600 315 T 1200 315"/>
+  </path>
+  <path d="M 0 315 Q 300 500 600 315 T 1200 315" fill="none" stroke="url(#vibeGradient)" stroke-width="4" opacity="0.4">
+    <animate attributeName="d" 
+             dur="15s" 
+             repeatCount="indefinite"
+             values="M 0 315 Q 300 500 600 315 T 1200 315;
+                     M 0 315 Q 300 100 600 315 T 1200 315;
+                     M 0 315 Q 300 500 600 315 T 1200 315"/>
+  </path>
+
+  <!-- Code Blocks (Structured) -->
+  <g transform="translate(450, 200)" filter="url(#glow)">
+    <rect x="0" y="0" width="300" height="230" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="2" opacity="0.8" />
+    <rect x="20" y="30" width="160" height="10" rx="5" fill="#64748b" />
+    <rect x="20" y="60" width="220" height="10" rx="5" fill="#475569" />
+    <rect x="20" y="80" width="180" height="10" rx="5" fill="#475569" />
+    <rect x="20" y="110" width="200" height="10" rx="5" fill="#475569" />
+    <rect x="20" y="130" width="140" height="10" rx="5" fill="#475569" />
+    <rect x="20" y="160" width="100" height="10" rx="5" fill="#22d3ee" />
+  </g>
+
+  <!-- Connecting Lines -->
+  <circle cx="600" cy="315" r="50" fill="none" stroke="#a855f7" stroke-width="4" stroke-dasharray="10 5">
+    <animateTransform attributeName="transform" type="rotate" from="0 600 315" to="360 600 315" dur="20s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Text -->
+  <text x="600" y="550" font-family="'Segoe UI', sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle" filter="url(#glow)">VIBE CODING 2026</text>
+  <text x="600" y="590" font-family="'Segoe UI', sans-serif" font-size="24" fill="#94a3b8" text-anchor="middle">Agentic Engineering Era</text>
+
+</svg>
