@@ -12,9 +12,9 @@ description: Create a high-quality technical blog post based on a specific theme
    - Structure:
      - **Ki (Intro)**: Empathy with user pain points.
      - **Sho (Development)**: Explanation of the 5 trends/solutions. "No silver bullet".
-     - **Ten (Twist/Warning)**: Cultural/Process aspects, pitfalls of just using tools.
+   - **Ten (Twist/Warning)**: Cultural/Process aspects, pitfalls of just using tools.
      - **Ketsu (Conclusion)**: Actionable advice for the engineer.
-   - *Note: Do not use literal "Ki-Sho-Ten-Ketsu" in headings.*
+   - *Note: Do not use literal "Ki-Sho-Ten-Ketsu" or "Introduction/Development/Twist/Conclusion" (or Japanese equivalents: 起承転結, 序章, 展開, 転換, 結末) in headings.*
 
 3. **Step 3: Image Preparation**
    - Create diagrams or header images using available tools (e.g., SVG generation, Mermaid).

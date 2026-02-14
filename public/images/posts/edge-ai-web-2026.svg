@@ -1,0 +1,68 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000000" />
+      <stop offset="100%" stop-color="#1a1a1a" />
+    </linearGradient>
+    <linearGradient id="neonGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f260" />
+      <stop offset="100%" stop-color="#0575e6" />
+    </linearGradient>
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)" />
+
+  <!-- Browser Window Frame -->
+  <rect x="250" y="150" width="700" height="400" rx="10" fill="none" stroke="#333" stroke-width="3" />
+  <rect x="250" y="150" width="700" height="40" rx="10" fill="#333" />
+  <circle cx="280" cy="170" r="6" fill="#ff5f56" />
+  <circle cx="300" cy="170" r="6" fill="#ffbd2e" />
+  <circle cx="320" cy="170" r="6" fill="#27c93f" />
+
+  <!-- Neural Network Inside Browser (Local AI) -->
+  <g transform="translate(600, 350)" filter="url(#neonGlow)">
+    <!-- Nodes -->
+    <circle cx="0" cy="-80" r="10" fill="#00f260" />
+    <circle cx="-60" cy="0" r="10" fill="#0575e6" />
+    <circle cx="60" cy="0" r="10" fill="#0575e6" />
+    <circle cx="-30" cy="80" r="10" fill="#00f260" />
+    <circle cx="30" cy="80" r="10" fill="#00f260" />
+    
+    <!-- Connections -->
+    <line x1="0" y1="-80" x2="-60" y2="0" stroke="url(#neonGradient)" stroke-width="2" />
+    <line x1="0" y1="-80" x2="60" y2="0" stroke="url(#neonGradient)" stroke-width="2" />
+    <line x1="-60" y1="0" x2="-30" y2="80" stroke="url(#neonGradient)" stroke-width="2" />
+    <line x1="-60" y1="0" x2="30" y2="80" stroke="url(#neonGradient)" stroke-width="2" />
+    <line x1="60" y1="0" x2="-30" y2="80" stroke="url(#neonGradient)" stroke-width="2" />
+    <line x1="60" y1="0" x2="30" y2="80" stroke="url(#neonGradient)" stroke-width="2" />
+    
+    <!-- Pulse Animation -->
+    <circle cx="0" cy="-80" r="15" fill="none" stroke="white" stroke-width="2" opacity="0">
+      <animate attributeName="r" from="10" to="25" dur="1.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" from="0.8" to="0" dur="1.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Disconnected Cloud Icon (Symbolizing Edge/Offline) -->
+  <g transform="translate(900, 100)">
+    <path d="M 50 30 C 50 30, 20 30, 20 60 C 20 90, 50 90, 50 90 L 110 90 C 110 90, 130 90, 130 65 C 130 40, 110 30, 110 30 C 110 30, 100 0, 70 0 C 40 0, 50 30, 50 30 Z" fill="none" stroke="#555" stroke-width="3" stroke-dasharray="5 5" />
+    <line x1="30" y1="100" x2="110" y2="-10" stroke="#555" stroke-width="3" />
+  </g>
+
+  <!-- Lightning Bolt (Speed/Power) -->
+  <path d="M 550 450 L 580 400 L 620 400 L 600 350 L 650 350 L 590 480 Z" fill="#f1c40f" filter="url(#neonGlow)" transform="translate(150, -50)"/>
+
+  <!-- Text -->
+  <text x="600" y="80" font-family="'Segoe UI', sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle" filter="url(#neonGlow)">EDGE AI & WEB</text>
+  <text x="600" y="125" font-family="'Segoe UI', sans-serif" font-size="24" fill="#00f260" text-anchor="middle" letter-spacing="3">LOCAL FIRST. ZERO LATENCY.</text>
+
+</svg>

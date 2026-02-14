@@ -1,0 +1,65 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c3e50" />
+      <stop offset="100%" stop-color="#34495e" />
+    </linearGradient>
+    <linearGradient id="torchGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#e74c3c" />
+      <stop offset="50%" stop-color="#f39c12" />
+      <stop offset="100%" stop-color="#f1c40f" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+      <feMerge>
+        <feMergeNode in="coloredBlur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)" />
+
+  <!-- Binary Matrix Rain Effect (Subtle) -->
+  <g opacity="0.1" font-family="monospace" font-size="20" fill="#2ecc71">
+    <text x="50" y="50">10110</text>
+    <text x="150" y="150">01001</text>
+    <text x="1050" y="100">11011</text>
+    <text x="950" y="550">00100</text>
+     <!-- More random binary digits could be added -->
+  </g>
+
+  <!-- Central Concept: Torch Passing with Digial Twist -->
+  <g transform="translate(400, 200)">
+    <!-- Human Hand (Abstract) -->
+    <path d="M 50 150 Q 80 180 50 210 L 0 210 L 0 150 Z" fill="#95a5a6" opacity="0.5"/>
+    <rect x="0" y="160" width="100" height="40" rx="10" fill="#bdc3c7" />
+
+    <!-- Robot/AI Hand (Abstract) -->
+    <path d="M 350 150 Q 320 180 350 210 L 400 210 L 400 150 Z" fill="#3498db" opacity="0.5"/>
+    <rect x="300" y="160" width="100" height="40" rx="10" fill="#2980b9" />
+
+    <!-- The "Torch" / Knowledge Flame -->
+    <circle cx="200" cy="120" r="60" fill="url(#torchGradient)" filter="url(#glow)">
+       <animate attributeName="r" values="58;62;58" dur="2s" repeatCount="indefinite" />
+       <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <!-- Digital sparks from the flame -->
+    <rect x="180" y="100" width="40" height="40" fill="none" stroke="white" stroke-width="2">
+        <animateTransform attributeName="transform" type="rotate" from="0 200 120" to="360 200 120" dur="10s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Text -->
+  <text x="600" y="500" font-family="'Segoe UI', sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle" filter="url(#glow)">MENTORING 2.0</text>
+  <text x="600" y="550" font-family="'Segoe UI', sans-serif" font-size="28" fill="#ecf0f1" text-anchor="middle">Guiding the AI Native Generation</text>
+
+  <!-- Decorative Circuits -->
+  <path d="M 100 500 L 200 500 L 250 450" fill="none" stroke="#7f8c8d" stroke-width="2" />
+  <circle cx="100" cy="500" r="5" fill="#7f8c8d" />
+  
+  <path d="M 1100 500 L 1000 500 L 950 450" fill="none" stroke="#7f8c8d" stroke-width="2" />
+  <circle cx="1100" cy="500" r="5" fill="#7f8c8d" />
+
+</svg>
