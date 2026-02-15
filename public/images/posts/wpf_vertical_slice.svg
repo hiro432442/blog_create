@@ -1,0 +1,47 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="slice" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <path d="M 0 630 L 1200 0" stroke="#333" stroke-width="1" opacity="0.1" />
+  
+  <!-- CAKE / LAYERS (The "Old" Way - Faded) -->
+  <g transform="translate(300, 315)" opacity="0.3">
+    <rect x="-100" y="-100" width="200" height="40" fill="#475569" />
+    <rect x="-100" y="-50" width="200" height="40" fill="#475569" />
+    <rect x="-100" y="0" width="200" height="40" fill="#475569" />
+    <rect x="-100" y="50" width="200" height="40" fill="#475569" />
+    <text x="0" y="130" font-family="sans-serif" font-size="24" fill="#94a3b8" text-anchor="middle">LAYERS</text>
+  </g>
+
+  <!-- ARROW -->
+  <path d="M 500 315 L 600 315" stroke="white" stroke-width="4" marker-end="url(#arrow)" />
+
+  <!-- VERTICAL SLICES (The "New" Way) -->
+  <g transform="translate(800, 315)">
+    <!-- Slice 1 -->
+    <rect x="-120" y="-120" width="60" height="240" rx="4" fill="url(#slice)" opacity="0.8" />
+    <!-- Slice 2 -->
+    <rect x="-40" y="-120" width="60" height="240" rx="4" fill="url(#slice)" />
+    <!-- Slice 3 -->
+    <rect x="40" y="-120" width="60" height="240" rx="4" fill="url(#slice)" opacity="0.6" />
+    
+    <text x="0" y="150" font-family="sans-serif" font-size="24" fill="#38bdf8" text-anchor="middle">FEATURES</text>
+  </g>
+  
+  <!-- CUTTING LINE -->
+  <path d="M 760 -50 L 760 650" stroke="#38bdf8" stroke-width="2" stroke-dasharray="10 10" opacity="0.5" />
+  <path d="M 840 -50 L 840 650" stroke="#38bdf8" stroke-width="2" stroke-dasharray="10 10" opacity="0.5" />
+
+  <!-- Title -->
+  <text x="600" y="550" font-family="sans-serif" font-size="42" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="2">VERTICAL SLICE</text>
+  <text x="600" y="590" font-family="sans-serif" font-size="20" fill="#94a3b8" text-anchor="middle" letter-spacing="4">ARCHITECTURE 2026</text>
+</svg>

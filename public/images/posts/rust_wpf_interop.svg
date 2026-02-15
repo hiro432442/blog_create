@@ -1,0 +1,49 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0f0f" />
+      <stop offset="100%" stop-color="#1a1a1a" />
+    </linearGradient>
+    <linearGradient id="rust" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dea584" />
+      <stop offset="100%" stop-color="#b7410e" />
+    </linearGradient>
+    <linearGradient id="csharp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a179dc" />
+      <stop offset="100%" stop-color="#380080" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <path d="M 0 630 L 1200 0" stroke="#333" stroke-width="1" opacity="0.1" />
+  <path d="M 0 0 L 1200 630" stroke="#333" stroke-width="1" opacity="0.1" />
+  
+  <!-- GEARS (Rust - Performance/Metal) -->
+  <g transform="translate(350, 315)">
+    <circle r="100" fill="none" stroke="url(#rust)" stroke-width="20" stroke-dasharray="20 10" opacity="0.8" />
+    <circle r="80" fill="none" stroke="#b7410e" stroke-width="2" />
+    <text x="0" y="10" font-family="monospace" font-size="40" fill="#dea584" text-anchor="middle" font-weight="bold">RUST</text>
+  </g>
+
+  <!-- WINDOW (WPF - UI) -->
+  <g transform="translate(850, 315)">
+    <rect x="-120" y="-100" width="240" height="200" rx="10" fill="#1e1e1e" stroke="url(#csharp)" stroke-width="4" />
+    <rect x="-120" y="-100" width="240" height="30" rx="10" fill="#380080" />
+    <text x="0" y="20" font-family="sans-serif" font-size="40" fill="#a179dc" text-anchor="middle" font-weight="bold">WPF</text>
+    
+    <!-- UI Elements -->
+    <rect x="-100" y="-40" width="200" height="10" fill="#333" />
+    <rect x="-100" y="-10" width="150" height="10" fill="#333" />
+    <rect x="-100" y="50" width="80" height="30" rx="5" fill="#68217a" />
+  </g>
+
+  <!-- Connection / Lightning -->
+  <path d="M 450 315 L 730 315" stroke="white" stroke-width="4" stroke-dasharray="10 5" opacity="0.5" />
+  <circle cx="590" cy="315" r="30" fill="#333" stroke="white" stroke-width="2" />
+  <path d="M 580 315 L 600 315" stroke="white" stroke-width="2" />
+  <text x="590" y="320" font-family="monospace" font-size="14" fill="white" text-anchor="middle">FFI</text>
+
+  <!-- Title -->
+  <text x="600" y="550" font-family="sans-serif" font-size="42" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="2">HYBRID PERFORMANCE</text>
+  <text x="600" y="590" font-family="sans-serif" font-size="20" fill="#888" text-anchor="middle" letter-spacing="4">SAFE INTEROP 2026</text>
+</svg>
