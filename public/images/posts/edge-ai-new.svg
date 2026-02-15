@@ -1,31 +1,62 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#111" />
-      <stop offset="100%" stop-color="#222" />
+      <stop offset="0%" stop-color="#09090b" />
+      <stop offset="100%" stop-color="#18181b" />
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#27272a" />
+      <stop offset="100%" stop-color="#18181b" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#3b82f6" />
     </linearGradient>
   </defs>
   
   <rect width="1200" height="630" fill="url(#bg)" />
   
-  <!-- Simple Browser Frame -->
-  <rect x="200" y="100" width="800" height="430" rx="10" fill="#333" />
-  <rect x="200" y="100" width="800" height="40" rx="10" fill="#444" />
-  <circle cx="230" cy="120" r="6" fill="#ff5f56" />
-  <circle cx="250" cy="120" r="6" fill="#ffbd2e" />
-  <circle cx="270" cy="120" r="6" fill="#27c93f" />
+  <!-- Grid Background (Safe) -->
+  <path d="M 0 630 L 1200 0" stroke="#333" stroke-width="1" opacity="0.1" />
+  <path d="M 0 0 L 1200 630" stroke="#333" stroke-width="1" opacity="0.1" />
   
-  <!-- Content Area -->
-  <rect x="200" y="140" width="800" height="390" fill="#1e1e1e" />
+  <!-- Browser Window -->
+  <!-- Shadow simulation using opacity rects -->
+  <rect x="205" y="105" width="800" height="430" rx="12" fill="black" opacity="0.4" />
+  <rect x="200" y="100" width="800" height="430" rx="12" fill="url(#card)" stroke="#3f3f46" stroke-width="1" />
   
-  <!-- Brain / Chip Icon (Simplified) -->
-  <circle cx="600" cy="335" r="80" fill="none" stroke="#00f260" stroke-width="4" />
-  <path d="M 560 335 L 640 335" stroke="#00f260" stroke-width="2" />
-  <path d="M 600 295 L 600 375" stroke="#00f260" stroke-width="2" />
-  <path d="M 570 305 L 630 365" stroke="#00f260" stroke-width="2" />
-  <path d="M 570 365 L 630 305" stroke="#00f260" stroke-width="2" />
+  <!-- Browser Header -->
+  <path d="M 201 150 L 999 150" stroke="#3f3f46" stroke-width="1" />
+  <circle cx="230" cy="125" r="6" fill="#ef4444" />
+  <circle cx="250" cy="125" r="6" fill="#f59e0b" />
+  <circle cx="270" cy="125" r="6" fill="#10b981" />
+  
+  <!-- Main Visual: Neural Net inside Browser -->
+  <g transform="translate(600, 315)">
+    <!-- Simulated Glow via Layering (No Filters) -->
+    <!-- Connecting Lines Glow -->
+    <path d="M -150 50 L 0 -100 L 150 50" fill="none" stroke="url(#accent)" stroke-width="8" opacity="0.2" />
+    <path d="M -150 50 L 0 -100 L 150 50" fill="none" stroke="url(#accent)" stroke-width="4" opacity="0.4" />
+    <path d="M -150 50 L 0 -100 L 150 50" fill="none" stroke="white" stroke-width="2" />
+    
+    <path d="M -150 50 L 150 50" fill="none" stroke="url(#accent)" stroke-width="8" opacity="0.2" />
+    <path d="M -150 50 L 150 50" fill="none" stroke="url(#accent)" stroke-width="4" opacity="0.4" />
+    <path d="M -150 50 L 150 50" fill="none" stroke="white" stroke-width="2" />
+    
+    <!-- Central Node (Brain/Core) -->
+    <circle cx="0" cy="-20" r="40" fill="#18181b" stroke="url(#accent)" stroke-width="2" />
+    <circle cx="0" cy="-20" r="15" fill="url(#accent)" />
+    
+    <!-- Satellite Nodes -->
+    <circle cx="-150" cy="50" r="12" fill="#10b981" />
+    <circle cx="150" cy="50" r="12" fill="#3b82f6" />
+    <circle cx="0" cy="-100" r="12" fill="#3b82f6" />
+  </g>
+  
+  <!-- Speed/Bolt Icon -->
+  <path d="M 580 430 L 610 390 L 640 390 L 620 350 L 660 350 L 600 450 Z" fill="#eab308" transform="translate(250, -50)" />
   
   <!-- Text -->
-  <text x="600" y="500" font-family="sans-serif" font-size="40" fill="white" text-anchor="middle" font-weight="bold">EDGE AI 2026</text>
-  <text x="600" y="550" font-family="sans-serif" font-size="24" fill="#aaa" text-anchor="middle">Local-First Web</text>
+  <text x="600" y="550" font-family="'Segoe UI', Roboto, Helvetica, sans-serif" font-size="42" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="2">EDGE AI WEB</text>
+  <text x="600" y="590" font-family="'Segoe UI', Roboto, Helvetica, sans-serif" font-size="20" fill="#a1a1aa" text-anchor="middle" letter-spacing="4">PRIVACY • SPEED • LOCAL</text>
 </svg>
