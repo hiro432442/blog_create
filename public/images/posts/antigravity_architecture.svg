@@ -1,0 +1,63 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0f0f" />
+      <stop offset="100%" stop-color="#1a1a2e" />
+    </linearGradient>
+    <linearGradient id="orb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d946ef" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur" />
+      <feMerge>
+        <feMergeNode in="coloredBlur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <path d="M 0 630 L 1200 0" stroke="#333" stroke-width="1" opacity="0.1" />
+
+  <!-- Central Supervisor (The Brain) -->
+  <g transform="translate(600, 315)">
+    <circle r="80" fill="url(#orb)" opacity="0.2" filter="url(#glow)" />
+    <circle r="60" fill="none" stroke="url(#orb)" stroke-width="4" />
+    <path d="M -30 -30 L 30 30 M 30 -30 L -30 30" stroke="url(#orb)" stroke-width="2" />
+    <text x="0" y="5" font-family="sans-serif" font-size="16" fill="#e879f9" text-anchor="middle" font-weight="bold">SUPERVISOR</text>
+  </g>
+
+  <!-- Worker Agents (Satellites) -->
+  <!-- Coder -->
+  <g transform="translate(300, 315)">
+    <line x1="0" y1="0" x2="240" y2="0" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="5 5" opacity="0.5" />
+    <circle r="50" fill="#1a1a2e" stroke="#8b5cf6" stroke-width="2" />
+    <text x="0" y="5" font-family="monospace" font-size="14" fill="#a78bfa" text-anchor="middle">&lt;Coder /&gt;</text>
+  </g>
+  
+  <!-- Reviewer -->
+  <g transform="translate(900, 315)">
+    <line x1="0" y1="0" x2="-240" y2="0" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="5 5" opacity="0.5" />
+    <circle r="50" fill="#1a1a2e" stroke="#8b5cf6" stroke-width="2" />
+    <text x="0" y="5" font-family="monospace" font-size="14" fill="#a78bfa" text-anchor="middle">Reviewer</text>
+  </g>
+  
+  <!-- Researcher -->
+  <g transform="translate(600, 100)">
+    <line x1="0" y1="0" x2="0" y2="155" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="5 5" opacity="0.5" />
+    <circle r="50" fill="#1a1a2e" stroke="#8b5cf6" stroke-width="2" />
+    <text x="0" y="5" font-family="monospace" font-size="14" fill="#a78bfa" text-anchor="middle">Researcher</text>
+  </g>
+
+  <!-- Shared Memory (Context) -->
+  <g transform="translate(600, 500)">
+    <rect x="-100" y="-30" width="200" height="60" rx="10" fill="#1e1b4b" stroke="#6366f1" stroke-width="2" />
+    <text x="0" y="5" font-family="sans-serif" font-size="16" fill="#818cf8" text-anchor="middle">SHARED CONTEXT</text>
+    <line x1="0" y1="-30" x2="0" y2="-125" stroke="#6366f1" stroke-width="2" opacity="0.5" />
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="600" font-family="sans-serif" font-size="42" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="2">ANTIGRAVITY</text>
+  <text x="600" y="560" font-family="sans-serif" font-size="20" fill="#c084fc" text-anchor="middle" letter-spacing="4">MULTI-AGENT ARCHITECTURE</text>
+</svg>
