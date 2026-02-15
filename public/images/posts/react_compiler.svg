@@ -1,0 +1,45 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="magic" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bg)" />
+  
+  <!-- Spaghetti Code (Left) -->
+  <g transform="translate(200, 315)">
+    <path d="M -100 -50 Q 0 -100 100 0 T -50 100" fill="none" stroke="#64748b" stroke-width="4" opacity="0.5" />
+    <path d="M -80 80 Q 0 0 80 -80" fill="none" stroke="#64748b" stroke-width="4" opacity="0.5" />
+    <text x="0" y="140" font-family="monospace" font-size="20" fill="#94a3b8" text-anchor="middle">useMemo(() => ...)</text>
+  </g>
+
+  <!-- The Compiler (Center) -->
+  <g transform="translate(600, 315)">
+    <rect x="-80" y="-80" width="160" height="160" rx="20" fill="#0ea5e9" opacity="0.2" />
+    <rect x="-60" y="-60" width="120" height="120" rx="10" fill="none" stroke="#0ea5e9" stroke-width="4" />
+    <path d="M -30 0 L 0 30 L 30 -30" fill="none" stroke="#0ea5e9" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="0" y="-90" font-family="sans-serif" font-size="16" fill="#0ea5e9" text-anchor="middle">REACT COMPILER</text>
+  </g>
+
+  <!-- Optimized Code (Right) -->
+  <g transform="translate(1000, 315)">
+    <line x1="-100" y1="-50" x2="50" y2="-50" stroke="url(#magic)" stroke-width="6" stroke-linecap="round" />
+    <line x1="-100" y1="0" x2="80" y2="0" stroke="url(#magic)" stroke-width="6" stroke-linecap="round" />
+    <line x1="-100" y1="50" x2="0" y2="50" stroke="url(#magic)" stroke-width="6" stroke-linecap="round" />
+    <text x="0" y="140" font-family="monospace" font-size="20" fill="#fbbf24" text-anchor="middle">Pure Logic</text>
+  </g>
+
+  <!-- Transition Arrows -->
+  <path d="M 350 315 L 480 315" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 720 315 L 850 315" stroke="#fbbf24" stroke-width="4" marker-end="url(#arrow)" />
+
+  <!-- Title -->
+  <text x="600" y="550" font-family="sans-serif" font-size="42" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="2">FORGET MEMO</text>
+  <text x="600" y="590" font-family="sans-serif" font-size="20" fill="#7dd3fc" text-anchor="middle" letter-spacing="4">AUTOMATIC OPTIMIZATION 2026</text>
+</svg>

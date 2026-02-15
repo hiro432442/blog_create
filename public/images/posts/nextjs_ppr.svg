@@ -1,0 +1,46 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000000" />
+      <stop offset="100%" stop-color="#111" />
+    </linearGradient>
+    <pattern id="streaming" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#ec4899" opacity="0.5" />
+    </pattern>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bg)" />
+  
+  <!-- Browser Frame -->
+  <rect x="250" y="100" width="700" height="450" rx="10" stroke="#333" stroke-width="2" fill="none" />
+  
+  <!-- Static Shell (Solid) -->
+  <rect x="252" y="102" width="696" height="50" fill="#222" /> <!-- Header -->
+  <rect x="252" y="152" width="150" height="396" fill="#222" /> <!-- Sidebar -->
+  <rect x="252" y="500" width="696" height="48" fill="#222" /> <!-- Footer -->
+  
+  <circle cx="280" cy="127" r="5" fill="#fff" opacity="0.2" />
+  <rect x="300" y="122" width="100" height="10" rx="5" fill="#fff" opacity="0.1" />
+  
+  <!-- Dynamic Holes (Streaming) -->
+  <rect x="420" y="170" width="500" height="310" fill="url(#streaming)" stroke="#ec4899" stroke-width="2" stroke-dasharray="5 5" />
+  
+  <!-- Loading Skeletons -->
+  <rect x="440" y="190" width="460" height="20" rx="4" fill="#ec4899" opacity="0.2">
+    <animate attributeName="opacity" values="0.2;0.5;0.2" dur="1.5s" repeatCount="indefinite" />
+  </rect>
+  <rect x="440" y="220" width="300" height="20" rx="4" fill="#ec4899" opacity="0.2">
+    <animate attributeName="opacity" values="0.2;0.5;0.2" dur="1.5s" begin="0.2s" repeatCount="indefinite" />
+  </rect>
+  <rect x="440" y="250" width="400" height="20" rx="4" fill="#ec4899" opacity="0.2">
+    <animate attributeName="opacity" values="0.2;0.5;0.2" dur="1.5s" begin="0.4s" repeatCount="indefinite" />
+  </rect>
+
+  <!-- Labels -->
+  <text x="327" y="350" font-family="sans-serif" font-size="20" fill="#888" text-anchor="middle" transform="rotate(-90 327 350)">STATIC SHELL</text>
+  <text x="670" y="325" font-family="sans-serif" font-size="24" fill="#ec4899" text-anchor="middle" font-weight="bold">DYNAMIC</text>
+  <text x="670" y="350" font-family="sans-serif" font-size="14" fill="#ec4899" text-anchor="middle">STREAMING...</text>
+
+  <!-- Title -->
+  <text x="600" y="600" font-family="sans-serif" font-size="42" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="2">PARTIAL PRERENDERING</text>
+</svg>
