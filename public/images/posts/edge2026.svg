@@ -1,19 +1,19 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f172a" />
-      <stop offset="100%" stop-color="#1e293b" />
+      <stop offset="0%" stop-color="#000000" />
+      <stop offset="100%" stop-color="#1a1a1a" />
     </linearGradient>
-    <linearGradient id="vibeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#22d3ee" />
-      <stop offset="50%" stop-color="#a855f7" />
-      <stop offset="100%" stop-color="#f472b6" />
+    <linearGradient id="neonGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f260" />
+      <stop offset="100%" stop-color="#0575e6" />
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur" />
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
       <feMerge>
-        <feMergeNode in="coloredBlur" />
-        <feMergeNode in="SourceGraphic" />
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
   </defs>
@@ -21,48 +21,48 @@
   <!-- Background -->
   <rect width="1200" height="630" fill="url(#bgGradient)" />
 
-  <!-- Grid Pattern -->
-  <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
-  </pattern>
-  <rect width="1200" height="630" fill="url(#grid)" />
+  <!-- Browser Window Frame -->
+  <rect x="250" y="150" width="700" height="400" rx="10" fill="none" stroke="#333" stroke-width="3" />
+  <rect x="250" y="150" width="700" height="40" rx="10" fill="#333" />
+  <circle cx="280" cy="170" r="6" fill="#ff5f56" />
+  <circle cx="300" cy="170" r="6" fill="#ffbd2e" />
+  <circle cx="320" cy="170" r="6" fill="#27c93f" />
 
-  <!-- Abstract Waves (Vibes) -->
-  <path d="M 0 315 Q 300 100 600 315 T 1200 315" fill="none" stroke="url(#vibeGradient)" stroke-width="8" opacity="0.6" filter="url(#glow)">
-    <animate attributeName="d" 
-             dur="10s" 
-             repeatCount="indefinite"
-             values="M 0 315 Q 300 100 600 315 T 1200 315;
-                     M 0 315 Q 300 500 600 315 T 1200 315;
-                     M 0 315 Q 300 100 600 315 T 1200 315"/>
-  </path>
-  <path d="M 0 315 Q 300 500 600 315 T 1200 315" fill="none" stroke="url(#vibeGradient)" stroke-width="4" opacity="0.4">
-    <animate attributeName="d" 
-             dur="15s" 
-             repeatCount="indefinite"
-             values="M 0 315 Q 300 500 600 315 T 1200 315;
-                     M 0 315 Q 300 100 600 315 T 1200 315;
-                     M 0 315 Q 300 500 600 315 T 1200 315"/>
-  </path>
-
-  <!-- Code Blocks (Structured) -->
-  <g transform="translate(450, 200)" filter="url(#glow)">
-    <rect x="0" y="0" width="300" height="230" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="2" opacity="0.8" />
-    <rect x="20" y="30" width="160" height="10" rx="5" fill="#64748b" />
-    <rect x="20" y="60" width="220" height="10" rx="5" fill="#475569" />
-    <rect x="20" y="80" width="180" height="10" rx="5" fill="#475569" />
-    <rect x="20" y="110" width="200" height="10" rx="5" fill="#475569" />
-    <rect x="20" y="130" width="140" height="10" rx="5" fill="#475569" />
-    <rect x="20" y="160" width="100" height="10" rx="5" fill="#22d3ee" />
+  <!-- Neural Network Inside Browser (Local AI) -->
+  <g transform="translate(600, 350)" filter="url(#neonGlow)">
+    <!-- Nodes -->
+    <circle cx="0" cy="-80" r="10" fill="#00f260" />
+    <circle cx="-60" cy="0" r="10" fill="#0575e6" />
+    <circle cx="60" cy="0" r="10" fill="#0575e6" />
+    <circle cx="-30" cy="80" r="10" fill="#00f260" />
+    <circle cx="30" cy="80" r="10" fill="#00f260" />
+    
+    <!-- Connections -->
+    <line x1="0" y1="-80" x2="-60" y2="0" stroke="url(#neonGradient)" stroke-width="2" />
+    <line x1="0" y1="-80" x2="60" y2="0" stroke="url(#neonGradient)" stroke-width="2" />
+    <line x1="-60" y1="0" x2="-30" y2="80" stroke="url(#neonGradient)" stroke-width="2" />
+    <line x1="-60" y1="0" x2="30" y2="80" stroke="url(#neonGradient)" stroke-width="2" />
+    <line x1="60" y1="0" x2="-30" y2="80" stroke="url(#neonGradient)" stroke-width="2" />
+    <line x1="60" y1="0" x2="30" y2="80" stroke="url(#neonGradient)" stroke-width="2" />
+    
+    <!-- Pulse Animation -->
+    <circle cx="0" cy="-80" r="15" fill="none" stroke="white" stroke-width="2" opacity="0">
+      <animate attributeName="r" from="10" to="25" dur="1.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" from="0.8" to="0" dur="1.5s" repeatCount="indefinite" />
+    </circle>
   </g>
 
-  <!-- Connecting Lines -->
-  <circle cx="600" cy="315" r="50" fill="none" stroke="#a855f7" stroke-width="4" stroke-dasharray="10 5">
-    <animateTransform attributeName="transform" type="rotate" from="0 600 315" to="360 600 315" dur="20s" repeatCount="indefinite"/>
-  </circle>
+  <!-- Disconnected Cloud Icon (Symbolizing Edge/Offline) -->
+  <g transform="translate(900, 100)">
+    <path d="M 50 30 C 50 30, 20 30, 20 60 C 20 90, 50 90, 50 90 L 110 90 C 110 90, 130 90, 130 65 C 130 40, 110 30, 110 30 C 110 30, 100 0, 70 0 C 40 0, 50 30, 50 30 Z" fill="none" stroke="#555" stroke-width="3" stroke-dasharray="5 5" />
+    <line x1="30" y1="100" x2="110" y2="-10" stroke="#555" stroke-width="3" />
+  </g>
+
+  <!-- Lightning Bolt (Speed/Power) -->
+  <path d="M 550 450 L 580 400 L 620 400 L 600 350 L 650 350 L 590 480 Z" fill="#f1c40f" filter="url(#neonGlow)" transform="translate(150, -50)"/>
 
   <!-- Text -->
-  <text x="600" y="550" font-family="'Segoe UI', sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle" filter="url(#glow)">VIBE CODING 2026</text>
-  <text x="600" y="590" font-family="'Segoe UI', sans-serif" font-size="24" fill="#94a3b8" text-anchor="middle">Agentic Engineering Era</text>
+  <text x="600" y="80" font-family="'Segoe UI', sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle" filter="url(#neonGlow)">EDGE AI & WEB</text>
+  <text x="600" y="125" font-family="'Segoe UI', sans-serif" font-size="24" fill="#00f260" text-anchor="middle" letter-spacing="3">LOCAL FIRST. ZERO LATENCY.</text>
 
 </svg>
