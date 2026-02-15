@@ -2,7 +2,7 @@
 title: "クラウドを捨てよ、ブラウザへ出よう：Edge AIとWebが融合する2026年"
 date: "2026-02-18"
 excerpt: "WebGPUとWebLLMの成熟により、AIは「クラウドにある魔法」から「手元にある道具」へと変わりました。プライバシーとゼロレイテンシーを実現する「Local-First AI」の現在地と、Frontendエンジニアが学ぶべき技術スタック。"
-coverImage: "/images/posts/edge2026.svg"
+coverImage: "/images/posts/edge-ai-new.svg"
 category: "Frontend"
 ---
 
